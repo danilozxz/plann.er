@@ -1,4 +1,4 @@
-import { ArrowRight, Settings2, UserRoundPlus } from "lucide-react"
+import { ArrowRight, UserRoundPlus } from "lucide-react"
 import { Button } from "../../../components/button"
 
 interface InviteGuestsStepProps {
