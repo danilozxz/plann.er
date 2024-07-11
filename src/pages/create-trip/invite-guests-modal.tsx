@@ -5,11 +5,11 @@ import { Button } from "../../components/button"
 interface InviteGuestsModalProps {
     closeGuestsModal: () => void
     emailsToInvite: string[]
-    removeEmailsFromInvites: (email: string) => void
+    removeEmailFromInvites: (email: string) => void
     addNewEmailToInvite: (event: FormEvent<HTMLFormElement>) => void
 }
 
-export const InviteGuestsModal = ({ closeGuestsModal, emailsToInvite, removeEmailsFromInvites, addNewEmailToInvite }: InviteGuestsModalProps) => {
+export const InviteGuestsModal = ({ closeGuestsModal, emailsToInvite, removeEmailFromInvites, addNewEmailToInvite }: InviteGuestsModalProps) => {
     return (
         <div className='fixed inset-0 bg-black/60 flex items-center justify-center'>
             <div className='w-[640px] rounded-xl py-5 px-6 shadow-shape bg-zinc-900 space-y-5'>
@@ -29,7 +29,7 @@ export const InviteGuestsModal = ({ closeGuestsModal, emailsToInvite, removeEmai
                     {emailsToInvite.map(email => (
                         <div key={email} className='py-1.5 px-2.5 rounded-md bg-zinc-800 flex items-center gap-2'>
                             <span className='text-zinc-300'>{email}</span>
-                            <button type='button' onClick={() => removeEmailsFromInvites(email)}>
+                            <button type='button' onClick={() => removeEmailFromInvites(email)}>
                                 <X className='size-4 text-zinc-400' />
                             </button>
                         </div>

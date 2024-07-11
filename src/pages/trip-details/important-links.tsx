@@ -1,7 +1,7 @@
 import { Link2, Plus } from "lucide-react"
 import { Button } from "../../components/button"
 
-export const ImportantsLinks = () => {
+export const ImportantLinks = () => {
     return (
 
         <div className="space-y-6">
