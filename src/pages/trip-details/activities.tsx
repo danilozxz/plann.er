@@ -36,7 +36,7 @@ export const Activities = () => {
                             <span className="text-zinc-500 text-xs">{format(category.date, 'EEE', { locale: ptBR })}</span>
                         </div>
                         {category.activities.length > 0 ? (
-                            <div>
+                            <div className="space-y-2.5">
                                 {category.activities.map(activity => {
                                     return (
                                         <div className="space-y-2.5">

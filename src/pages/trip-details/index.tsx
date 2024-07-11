@@ -31,8 +31,8 @@ export function TripDetailsPage() {
               Cadastrar atividade
             </button>
           </div>
-
           <Activities />
+
         </div>
 
         <div className="w-80 space-y-6">
